@@ -20,9 +20,9 @@ router.get('/', function(req, res, next) {
 		
 
 		res.write(pageHeader);
-		var stream = bacon.fromArray(addressArray).flatMap(function(x) {
+		var stream = bacon.fromArray(addressArray).flatMap(function(address) {
 			    return bacon.fromCallback(function(callback) {
-					getPageTitle(x, callback);
+					getPageTitle(address, callback);
 				  });
 			});
 		stream.onValue(function(val) {
