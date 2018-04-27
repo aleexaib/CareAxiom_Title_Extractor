@@ -12,3 +12,4 @@
 - [ ] Linting passes
 - [ ] Tests pass
 - [ ] Documentation has been added/updated
+- [x] test
